@@ -62,3 +62,6 @@ If you've chosen to do this, you can run the `nodemon` Node script by running `n
 
 ## Create a fake database of users
 Branch: `create-fake-database`
+
+## Show all users
+Branch: `show-all-users`
