@@ -15,8 +15,6 @@ const usersRouter = require('./routes/users'); // don't need to specify .js
 // use the usersRouter for the route /users
 app.use('/users', usersRouter);
 
-console.log(usersRouter);
-
 // routing
 // '/' is the route that Express pattern matches against.
 // What this means is that when someone does a request to
