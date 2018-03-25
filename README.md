@@ -65,3 +65,14 @@ Branch: `create-fake-database`
 
 ## Show all users
 Branch: `show-all-users`
+
+## Templating with EJS
+Branch: `templating-with-ejs`
+
+## Modularising your code
+Branch: `refactor`
+
+MVC (model-view-controller) pattern:
+- model: responsible for handling/interfacing with data
+- view: how information is being rendered (in this case, HTML pages)
+- controller: behaviour
