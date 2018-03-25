@@ -18,6 +18,10 @@ Notes:
 ## Create an express boilerplate
 Branch: `create-express-boilerplate`
 
+If you are trying to run the `app.js` file for the Express server, be sure to run `npm install` to install all the required dependencies (including Express) first.
+
+This is the reason why we use `npm install --save`, so that all the dependencies (required modules/packages) that our web app needs can easily be installed (preparing the runtime environment) when we run the project on another machine.
+
 ### The Node.js import system
 - https://blog.risingstack.com/node-js-at-scale-module-system-commonjs-require/
 - To see the paths Node.js uses when it searches for modules, run `console.log(module.paths)`.
