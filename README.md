@@ -7,6 +7,9 @@ To checkout a branch: `git checkout <branchname>` (without brackets)
 
 To go back to the `master` branch: `git checkout master`
 
+## Reporting an issue/suggestion
+File a new Issue under the Issues tab.
+
 ## Create a Node project
 Branch: `create-node-project`
 
