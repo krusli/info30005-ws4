@@ -6,6 +6,9 @@ const express = require('express');
 // method, which returns a new Express application
 const app = express();
 
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
 // import the users object we exported in db.js
 const users = require('./models/db.js');
 
@@ -24,13 +27,17 @@ app.get('/', function(req, res) {
 })
 
 app.get('/users', function(req, res) {
-  res.send(users);  // send back the JSON file for now
+  res.render('user_template', {
+    users: users
+  });
 })
 
 app.get('/users/:userID', function(req, res) {
   // TODO send 404 if userID is invalid
   // res.status(404).send(<whatever you want to send>);
-  res.send(users[req.params.userID]);
+  res.render('user_template', {
+    users: [users[req.params.userID]]
+  });
 })
 
 // run the web server, listening on port 3000.
