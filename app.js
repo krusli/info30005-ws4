@@ -6,6 +6,9 @@ const express = require('express');
 // method, which returns a new Express application
 const app = express();
 
+// import the users object we exported in db.js
+const users = require('./models/db.js');
+
 // routing
 // '/' is the route that Express pattern matches against.
 // What this means is that when someone does a request to

@@ -59,3 +59,6 @@ In `package.json`:
 ```
 
 If you've chosen to do this, you can run the `nodemon` Node script by running `npm run nodemon`. Alternatively for the global install, simply run `nodemon app.js` in your project directory.
+
+## Create a fake database of users
+Branch: `create-fake-database`
