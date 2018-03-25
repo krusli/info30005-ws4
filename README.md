@@ -42,3 +42,20 @@ Contents of `module.paths`
 
 ### Express
 - [Express behind the hood](https://medium.com/man-moon/express-js-under-the-hood-6452c897b316)
+
+## Install nodemon
+Branch: `create-node-project`
+
+Nothing much to see here - as we are installing `nodemon` globally (`-g` flag): to the internal "node_modules" directory of your Node installation.
+
+You can alternatively install `nodemon` as a dev-dependency (`--save-dev`) and set up a script to run `nodemon`.
+
+In `package.json`:
+```
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "nodemon": "nodemon app.js"
+},
+```
+
+If you've chosen to do this, you can run the `nodemon` Node script by running `npm run nodemon`. Alternatively for the global install, simply run `nodemon app.js` in your project directory.

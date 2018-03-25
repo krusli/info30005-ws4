@@ -4,11 +4,15 @@
   "description": "Each branch in this repository contains the state of the source directories at the end of each stage of the workshop.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
   }
 }
